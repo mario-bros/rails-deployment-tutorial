@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root 'articles#index'
   get 'pages/home'
 
   get 'pages/about'
@@ -9,6 +11,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+
+  devise_for :users # , :controllers => { :omniauth_callbacks => "callbacks" }
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

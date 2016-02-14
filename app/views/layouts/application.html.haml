@@ -9,17 +9,17 @@
   %body
     %div#wrapper
       %header
-        = link_to image_tag("Amarok-logo-small.png", alt: "New"), {:controller => 'pages', :action => 'home'}, {:class => 'websiteLogo'}
-        = link_to 'READIT', {:controller => 'pages', :action => 'home'}, {:class => 'websiteTitle'}
+        = link_to image_tag("Amarok-logo-small.png", alt: "New"), pages_home_path , {:class => 'websiteLogo'}
+        = link_to 'READIT', pages_home_path, {:class => 'websiteTitle'}
 
 
       %nav#horzNav
         %p
-          = link_to 'Home', {:controller => 'pages', :action => 'home'}
-          = link_to 'About', {:controller => 'pages', :action => 'about'}
-          = link_to 'Directions', {:controller => 'pages', :action => 'directions'}
-          = link_to 'Articles', {:controller => 'articles', :action => 'index'}
-          = link_to 'Users', {:controller => 'users', :action => 'index'}
+          = link_to 'Home', pages_home_path
+          = link_to 'About', pages_about_path
+          = link_to 'Directions', pages_directions_path
+          = link_to 'Articles', articles_path
+          = link_to 'Users', users_path
 
       #main#content
         = yield

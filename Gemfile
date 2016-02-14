@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+# ruby_version
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -39,3 +39,7 @@ gem 'capistrano-rails', group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'haml'
+
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
