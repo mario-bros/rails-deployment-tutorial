@@ -1,0 +1,274 @@
+I, [2016-02-15T01:06:44.248973 #6701]  INFO -- : Refreshing Gem list
+I, [2016-02-15T01:06:46.361281 #6701]  INFO -- : listening on addr=/home/mario/apps/spblog/shared/sockets/unicorn.sock fd=9
+E, [2016-02-15T01:06:46.376832 #6701] ERROR -- : Access denied for user 'spblog'@'localhost' (using password: NO) (Mysql2::Error)
+/home/mario/.rvm/gems/ruby-2.2.1/gems/mysql2-0.3.20/lib/mysql2/client.rb:70:in `connect'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/mysql2-0.3.20/lib/mysql2/client.rb:70:in `initialize'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+/home/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+/home/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_handling.rb:87:in `connection'
+config/unicorn.rb:22:in `block in reload'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:502:in `call'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:502:in `spawn_missing_workers'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-02-15T01:06:59.999255 #6811]  INFO -- : Refreshing Gem list
+I, [2016-02-15T01:07:00.998941 #6811]  INFO -- : unlinking existing socket=/home/mario/apps/spblog/shared/sockets/unicorn.sock
+I, [2016-02-15T01:07:00.999097 #6811]  INFO -- : listening on addr=/home/mario/apps/spblog/shared/sockets/unicorn.sock fd=11
+E, [2016-02-15T01:07:01.000413 #6811] ERROR -- : Access denied for user 'spblog'@'localhost' (using password: NO) (Mysql2::Error)
+/home/mario/.rvm/gems/ruby-2.2.1/gems/mysql2-0.3.20/lib/mysql2/client.rb:70:in `connect'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/mysql2-0.3.20/lib/mysql2/client.rb:70:in `initialize'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+/home/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+/home/mario/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/activerecord-4.1.4/lib/active_record/connection_handling.rb:87:in `connection'
+config/unicorn.rb:22:in `block in reload'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:502:in `call'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:502:in `spawn_missing_workers'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+/home/mario/.rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/home/mario/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-02-15T01:09:48.463923 #7124]  INFO -- : Refreshing Gem list
+I, [2016-02-15T01:09:49.315120 #7124]  INFO -- : unlinking existing socket=/home/mario/apps/spblog/shared/sockets/unicorn.sock
+I, [2016-02-15T01:09:49.315304 #7124]  INFO -- : listening on addr=/home/mario/apps/spblog/shared/sockets/unicorn.sock fd=11
+I, [2016-02-15T01:09:49.389436 #7124]  INFO -- : master process ready
+I, [2016-02-15T01:09:49.390314 #7128]  INFO -- : worker=0 ready
+127.0.0.1 - - [15/Feb/2016 01:10:00] "GET / HTTP/1.0" 200 - 0.1188
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /articles HTTP/1.0" 200 - 0.2368
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0039
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0031
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0031
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0033
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0035
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0056
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0107
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0049
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0047
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0034
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0039
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0038
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0064
+127.0.0.1 - - [15/Feb/2016 01:10:07] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0037
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /articles HTTP/1.0" 200 - 0.0442
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0026
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0024
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0021
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0023
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0023
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0023
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0073
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0030
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0038
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0028
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0027
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0029
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0021
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0020
+127.0.0.1 - - [15/Feb/2016 01:12:46] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0032
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /articles HTTP/1.0" 200 - 0.0522
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0043
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0041
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0042
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0036
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0035
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0038
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0085
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0032
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0028
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0032
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0022
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0032
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0032
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0033
+127.0.0.1 - - [15/Feb/2016 01:15:23] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0057
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /articles HTTP/1.0" 200 - 0.0609
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0037
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0030
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0029
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0031
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0028
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0033
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0096
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0026
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0031
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0027
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0026
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0021
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0018
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0018
+127.0.0.1 - - [15/Feb/2016 01:15:50] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0035
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /articles HTTP/1.0" 200 - 0.0470
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0031
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0026
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0021
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0019
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0020
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0024
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0073
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0035
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0028
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0023
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0023
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0022
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0022
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0024
+127.0.0.1 - - [15/Feb/2016 01:15:59] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0038
+127.0.0.1 - - [15/Feb/2016 01:16:07] "GET /articles/2 HTTP/1.0" 200 - 0.1134
+127.0.0.1 - - [15/Feb/2016 01:16:20] "GET /articles/1 HTTP/1.0" 200 - 0.0620
+127.0.0.1 - - [15/Feb/2016 01:16:47] "GET /articles/1 HTTP/1.0" 200 - 0.0482
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /articles HTTP/1.0" 200 - 0.0447
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0029
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0025
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0030
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0095
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0028
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0026
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0028
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0032
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0034
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0029
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0029
+127.0.0.1 - - [15/Feb/2016 01:17:21] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0032
+127.0.0.1 - - [15/Feb/2016 01:17:22] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0054
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /articles HTTP/1.0" 200 - 0.0815
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0038
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0030
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0029
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0032
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0107
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0036
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0039
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0032
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0030
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0029
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0034
+127.0.0.1 - - [15/Feb/2016 01:17:36] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0036
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /articles HTTP/1.0" 200 - 0.0645
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0037
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0030
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0030
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0030
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0107
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0034
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0038
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0029
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0031
+127.0.0.1 - - [15/Feb/2016 01:17:38] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0054
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /articles HTTP/1.0" 200 - 0.0484
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0032
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0025
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0025
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0023
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0025
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0022
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0074
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0028
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0025
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0023
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0026
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0022
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0023
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0022
+127.0.0.1 - - [15/Feb/2016 01:17:39] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0034
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /articles HTTP/1.0" 200 - 0.0456
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0033
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0026
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0074
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0033
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0024
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0023
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:11] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0034
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /articles HTTP/1.0" 200 - 0.0495
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /articles.css?body=1 HTTP/1.0" 304 - 0.0028
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /comments.css?body=1 HTTP/1.0" 304 - 0.0024
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /pages.css?body=1 HTTP/1.0" 304 - 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /scaffolds.css?body=1 HTTP/1.0" 304 - 0.0018
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0018
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /turbolinks.js?body=1 HTTP/1.0" 304 - 0.0017
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /articles.js?body=1 HTTP/1.0" 304 - 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /comments.js?body=1 HTTP/1.0" 304 - 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /pages.js?body=1 HTTP/1.0" 304 - 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:13] "GET /Amarok-logo-small.png HTTP/1.0" 304 - 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /articles HTTP/1.0" 200 - 0.0466
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /articles.css?body=1 HTTP/1.0" 200 745 0.0027
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /comments.css?body=1 HTTP/1.0" 200 - 0.0026
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /pages.css?body=1 HTTP/1.0" 200 - 0.0025
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /scaffolds.css?body=1 HTTP/1.0" 200 1983 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /application.css?body=1 HTTP/1.0" 200 1452 0.0021
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /jquery.js?body=1 HTTP/1.0" 200 282767 0.0074
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 18448 0.0035
+127.0.0.1 - - [15/Feb/2016 01:18:23] "GET /turbolinks.js?body=1 HTTP/1.0" 200 24817 0.0023
+127.0.0.1 - - [15/Feb/2016 01:18:24] "GET /articles.js?body=1 HTTP/1.0" 200 31 0.0049
+127.0.0.1 - - [15/Feb/2016 01:18:24] "GET /comments.js?body=1 HTTP/1.0" 200 31 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:24] "GET /pages.js?body=1 HTTP/1.0" 200 31 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:24] "GET /users.js?body=1 HTTP/1.0" 200 31 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:24] "GET /application.js?body=1 HTTP/1.0" 200 586 0.0022
+127.0.0.1 - - [15/Feb/2016 01:18:24] "GET /Amarok-logo-small.png HTTP/1.0" 200 15511 0.0055
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /articles HTTP/1.0" 200 - 0.0504
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /articles.css?body=1 HTTP/1.0" 304 - 0.0027
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /comments.css?body=1 HTTP/1.0" 304 - 0.0026
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /pages.css?body=1 HTTP/1.0" 304 - 0.0024
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /scaffolds.css?body=1 HTTP/1.0" 304 - 0.0018
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /turbolinks.js?body=1 HTTP/1.0" 304 - 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /articles.js?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /comments.js?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /pages.js?body=1 HTTP/1.0" 304 - 0.0019
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0018
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0020
+127.0.0.1 - - [15/Feb/2016 01:18:26] "GET /Amarok-logo-small.png HTTP/1.0" 304 - 0.0019

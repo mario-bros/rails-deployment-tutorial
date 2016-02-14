@@ -1,15 +1,16 @@
-root = "/var/www/testdeploy/current" # e.g. /var/apps/rails_blog/current
+root = "/home/mario/apps/spblog" # e.g. /var/apps/rails_blog/current
+shared_dir = "#{root}/shared"
 working_directory root
-pid "#{root}/tmp/pids/unicorn.pid"
-stderr_path "#{root}/log/unicorn.log"
-stdout_path "#{root}/log/unicorn.log"
+pid "#{shared_dir}/pids/unicorn.pid"
+stderr_path "#{shared_dir}/log/unicorn.log"
+stdout_path "#{shared_dir}/log/unicorn.log"
 
 worker_processes 1 # update this with your preference
 timeout 30
 preload_app true
 
 # listen '/tmp/unicorn.spblog.sock', backlog: 64
-listen '/tmp/unicorn.spblog.sock'
+listen "#{shared_dir}/sockets/unicorn.sock", backlog: 64
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
@@ -32,6 +33,8 @@ end
 
 # Force the bundler gemfile environment variable to
 # reference the capistrano "current" symlink
+=begin
 before_exec do |_|
   ENV['BUNDLE_GEMFILE'] = File.join(root, 'Gemfile')
 end
+=end
