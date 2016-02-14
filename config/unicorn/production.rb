@@ -59,29 +59,3 @@
 #     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
 #   }
-
-
-# set :port, 22
-set :port, 80
-set :user, 'mario' # e.g. 'deploy'
-set :deploy_via, :remote_cache
-set :use_sudo, false
-set :branch, 'master' # e.g. 'master'
-
-server '127.0.0.1', # e.g. 192.xxx.xxx.xxx
-       roles: [:web, :app, :db],
-       port: fetch(:port),
-       user: fetch(:user),
-       primary: true
-
-set :deploy_to, "/var/www/#{fetch(:application)}" # e.g. "/var/apps/rails_blog"
-
-set :ssh_options, {
-    forward_agent: true,
-    auth_methods: %w(publickey),
-    #user: 'deployer'
-    user: 'deploy'
-}
-
-set :rails_env, :production
-set :conditionally_migrate, true

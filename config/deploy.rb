@@ -2,7 +2,11 @@
 lock '3.4.0'
 
 set :application, 'spblog'
-set :repo_url, 'git@example.com:me/my_repo.git'
+# set :repo_url, 'git@example.com:me/my_repo.git'
+set :repo_url, 'git@github.com:mario-bros/rails-deployment-tutorial.git'
+set :deploy_to, '/var/www/testdeploy'
+set :user, 'mario'
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -35,6 +39,19 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # set :keep_releases, 5
 
 namespace :deploy do
+
+  %w[start stop restart].each do |command|
+    desc 'Manage Unicorn'
+    task command do
+      on roles(:app), in: :sequence, wait: 3 do
+        execute "etc/init.d/unicorn_#{fetch(:application)} #{command}"
+        #invoke 'unicorn:stop'
+        #invoke 'unicorn:reload'
+      end
+    end
+  end
+
+  after :publishing, :restart
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
